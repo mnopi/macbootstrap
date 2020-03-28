@@ -1,0 +1,2 @@
+# macbootstrap
+macOS bootstrap script
