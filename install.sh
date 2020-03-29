@@ -71,4 +71,3 @@ if ! test -f /var/db/locate.database; then
 fi
 #sudo launchctl print system | grep \"com.apple.locate\" >/dev/null 2>&1 && echo "+ OK: locate database - loaded" || sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist && sudo launchctl enable system/com.apple.locate
 ## ENF: locate database
-
