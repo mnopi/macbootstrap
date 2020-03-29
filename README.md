@@ -21,11 +21,11 @@ macOS bootstrap script
 ## Install
 ```shell script
 bash -c "$( curl -sL https://raw.githubusercontent.com/j5pu/macbootstrap/master/install.sh )"
-bash -c "$( curl -sL "https://raw.githubusercontent.com/wheelgit/macbootstrap/master/install.sh?$(date +%s)" )"
+bash -c "$( curl -sL "https://raw.githubusercontent.com/j5pu/macbootstrap/master/install.sh?$(date +%s)" )"
 ```
 
 ## Uninstall
 ```shell script
-bash -c "$( curl -sL https://raw.githubusercontent.com/wheelgit/macbootstrap/master/uninstall.sh )"
-bash -c "$( curl -sL "https://raw.githubusercontent.com/wheelgit/macbootstrap/master/uninstall.sh?$(date +%s)" )"
+bash -c "$( curl -sL https://raw.githubusercontent.com/j5pu/macbootstrap/master/uninstall.sh )"
+bash -c "$( curl -sL "https://raw.githubusercontent.com/j5pu/macbootstrap/master/uninstall.sh?$(date +%s)" )"
 ```
