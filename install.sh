@@ -6,6 +6,7 @@ ACCOUNT_NAME=$( [[ "$( uname -s )" == "Darwin" ]] && /usr/bin/stat -f "%Su" /dev
 SECRETS_D="/Users/${ACCOUNT_NAME}/Library/Mobile Documents/com~apple~CloudDocs/secrets/secrets.d"
 groups_sudoers="staff admin wheel"
 enableroot="/Users/${ACCOUNT_NAME}/.enableroot"
+enablelocate="/Users/${ACCOUNT_NAME}/.enablelocate"
 tag="macbootstrap"
 admin_user="yes"
 ## END: script constants
@@ -72,4 +73,7 @@ log_dir="/var/log/${ACCOUNT_NAME}"
 [[ -d "${log_dir}" ]] || { sudo mkdir -p "${log_dir}"; sudo chown -R "${ACCOUNT_NAME}":$( id -g "${ACCOUNT_NAME}" ) "${log_dir}"; sudo /bin/chmod -R g+s "${log_dir}"; tag_file "${log_dir}"; echo "+ OK: ${log_dir} - created"; }
 ## END: log dir
 
-
+## START: .hushlogin
+test -f "/Users/${ACCOUNT_NAME}/.hushlogin" || { touch "/Users/${ACCOUNT_NAME}/.hushlogin"; tag_file "/Users/${ACCOUNT_NAME}/.hushlogin"; echo "+ OK: /Users/${ACCOUNT_NAME}/.hushlogin - created"; }
+test -f /var/root/.hushlogin || { sudo touch /var/root/.hushlogin; tag_file /var/root/.hushlogin sudo; echo "+ OK: /var/root/.hushlogin - created"; }
+## END: .hushlogin
