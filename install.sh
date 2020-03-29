@@ -1,15 +1,10 @@
 #!/usr/bin/env bash
 
+ACCOUNT_NAME=$( [[ "$( uname -s )" == "Darwin" ]] && /usr/bin/stat -f "%Su" /dev/console || { echo "- Error: Not macOS" >&2; exit 1; } )
+
 ## START: script constants
+SECRETS_D="/Users/${ACCOUNT_NAME}/Library/Mobile Documents/com~apple~CloudDocs/secrets/secrets.d"
 admin_user="yes"
 ## END: script constants
 
-USER_PASSWD="aaaa"
-security find-generic-password -s "${USER}" -a USER_PASSWD -w
-
-security add-generic-password -s "${USER}" -a "USER_PASSWD" -w "${USER_PASSWD}" -A -U
-security add-generic-password -s "${USER}" -a "USER_PASSWD" -w "${USER_PASSWD}" -A 
-
-USER_PASSWD
-
-echo "${USER_PASSWD}" | sudo -S true -k
+test -f "${SECRETS_D}"/*.sh && source "${SECRETS_D}"/*.sh || { echo "- Error: Not secrets files ${SECRETS_D}" >&2; exit 1; } )
