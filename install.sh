@@ -20,6 +20,7 @@ for group_sudoers in ${groups_sudoers}; do
     echo 'Defaults env_delete = "HOME"' | sudo tee -a "/etc/sudoers.d/${group_sudoers}" >/dev/null 2>&1
     echo 'Defaults env_delete = "PS1"' | sudo tee -a "/etc/sudoers.d/${group_sudoers}" >/dev/null 2>&1
     echo "Defaults: %${group_sudoers} !logfile, !syslog" | sudo tee -a "/etc/sudoers.d/${group_sudoers}" >/dev/null 2>&1
+    echo "+ OK: /etc/sudoers.d/${group_sudoers}"
   fi
 done
 ## END: /etc/sudoers.d
