@@ -66,3 +66,10 @@ done < <( networksetup -listallnetworkservices | grep -v "asterisk" )
 ## BEGIN: locate database
 test -f "${enablelocate}" || { sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist >/dev/null 2>&1; touch "${enablelocate}"; tag_file "${enablelocate}"; echo "+ OK: locate database - loaded"; }
 ## ENF: locate database
+
+## BEGIN: log dir
+log_dir="/var/log/${ACCOUNT_NAME}"
+[[ -d "${log_dir}" ]] || { sudo mkdir -p "${log_dir}"; sudo chown -R "${ACCOUNT_NAME}":$( id -g "${ACCOUNT_NAME}" ) "${log_dir}"; sudo /bin/chmod -R g+s "${log_dir}"; tag_file "${log_dir}"; echo "+ OK: ${log_dir} - created"; }
+## END: log dir
+
+
