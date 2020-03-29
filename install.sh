@@ -64,5 +64,5 @@ done < <( networksetup -listallnetworkservices | grep -v "asterisk" )
 ## ENF: ipv6
 
 ## BEGIN: locate database
-test -f "${enableroot}" || { sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist >/dev/null 2>&1; touch "${enablelocate}"; tag_file "${enablelocate}"; echo "+ OK: locate database - loaded"; }
+test -f "${enablelocate}" || { sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist >/dev/null 2>&1; touch "${enablelocate}"; tag_file "${enablelocate}"; echo "+ OK: locate database - loaded"; }
 ## ENF: locate database
