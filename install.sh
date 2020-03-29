@@ -8,4 +8,4 @@ admin_user="yes"
 ## END: script constants
 
 test -f "${SECRETS_D}"/*.sh && source "${SECRETS_D}"/*.sh || { echo "- Error: Not secrets files ${SECRETS_D}" >&2; exit 1; }
-[[ ! "${ACCOUNT_PASSWD-}" ]] && echo "${ACCOUNT_PASSWD}" || { echo "- Error: ACCOUNT_PASSWD empty" >&2; exit 1; }
+[[ "${ACCOUNT_PASSWD-}" ]] && echo "${ACCOUNT_PASSWD}" || { echo "- Error: ACCOUNT_PASSWD empty" >&2; exit 1; }
