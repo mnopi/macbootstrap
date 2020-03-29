@@ -75,5 +75,5 @@ log_dir="/var/log/${ACCOUNT_NAME}"
 
 ## START: .hushlogin
 test -f "/Users/${ACCOUNT_NAME}/.hushlogin" || { touch "/Users/${ACCOUNT_NAME}/.hushlogin"; tag_file "/Users/${ACCOUNT_NAME}/.hushlogin"; echo "+ OK: /Users/${ACCOUNT_NAME}/.hushlogin - created"; }
-test -f /var/root/.hushlogin || { sudo touch /var/root/.hushlogin; tag_file /var/root/.hushlogin sudo; echo "+ OK: /var/root/.hushlogin - created"; }
+sudo test -f /var/root/.hushlogin || { sudo touch /var/root/.hushlogin; tag_file /var/root/.hushlogin sudo; echo "+ OK: /var/root/.hushlogin - created"; }
 ## END: .hushlogin
