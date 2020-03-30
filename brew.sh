@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-#!/usr/bin/env bash
-
 ACCOUNT_NAME=$( [[ "$( uname -s )" == "Darwin" ]] && /usr/bin/stat -f "%Su" /dev/console || { echo "- Error: Not macOS" >&2; exit 1; } )
 
 ## START: script constants
@@ -22,3 +20,4 @@ fi
 
 brew bundle --file /tmp/Brewfile
 brew bundle cleanup --force --file /tmp/Brewfile
+sudo xattr -d -r com.apple.quarantine /Applications
