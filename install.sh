@@ -13,6 +13,7 @@ tag="${repo}"
 github_user="${ACCOUNT_NAME}"
 admin_user="yes"
 admin_id="502"
+scripts="brew pip npm gem"
 apple_scripts="/Users/${ACCOUNT_NAME}/Library/Mobile Documents/com~apple~ScriptEditor2/Documents"
 ## END: script constants
 
@@ -206,7 +207,30 @@ if [[ ! -f /usr/local/bin/brew ]]; then
 fi
 ## END: install brew
 
-## BEGIN: brew bundle
-#url="https://raw.githubusercontent.com/${ACCOUNT_NAME}/${repo}/master/brew.sh"
-#bash -c "$( curl -sL "${url}?$(date +%s)" )" || { echo "- Error: ${url}" >&2; exit 1; }
-## END: brew bundle
+## BEGIN: scripts
+for script in ${scripts}; do
+  url="https://raw.githubusercontent.com/${ACCOUNT_NAME}/${repo}/master/${script}.sh"
+  bash -c "$( curl -sL "${url}?$(date +%s)" )" || { echo "- Error: ${url}" >&2; exit 1; }
+done
+## END: scripts
+
+## BEGIN: pip
+test -d /usr/local/bin/pip && test -L /usr/local/bin/pip || { ln -s /usr/local/bin/pip3 /usr/local/bin/pip; tag_file /usr/local/bin/pip; echo "+ OK: /usr/local/bin/pip link - created"; }
+## END: pip
+
+## BEGIN: bash
+## END: bash
+
+## BEGIN: paths
+# con el path del repo
+## END: bash
+
+# packages atom
+# duti
+# Defaults
+# Dock
+# mackup
+# Fonts
+# Dictionaries
+# Control panel
+# gitconfig
