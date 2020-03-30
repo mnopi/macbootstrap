@@ -20,15 +20,33 @@ macOS bootstrap script
 
 ## Install
 Includes:
-- brew bundle
+- brew bundle (brew.sh)
+- pip requirements (pip.sh)
+- npm global (npm.sh)
+- ruby bundle system (gem.sh)
+
 ```shell script
 bash -c "$( curl -sL https://raw.githubusercontent.com/j5pu/macbootstrap/master/install.sh )"
 bash -c "$( curl -sL "https://raw.githubusercontent.com/j5pu/macbootstrap/master/install.sh?$(date +%s)" )"
 ```
-
-## Brew bundle
+### brew bundle
 ```shell script
 bash -c "$( curl -sL https://raw.githubusercontent.com/j5pu/macbootstrap/master/brew.sh )"
 bash -c "$( curl -sL "https://raw.githubusercontent.com/j5pu/macbootstrap/master/brew.sh?$(date +%s)" )"
+```
+### pip requirements
+```shell script
+bash -c "$( curl -sL https://raw.githubusercontent.com/j5pu/macbootstrap/master/pip.sh )"
+bash -c "$( curl -sL "https://raw.githubusercontent.com/j5pu/macbootstrap/master/pip.sh?$(date +%s)" )"
+```
+### npm global
+```shell script
+bash -c "$( curl -sL https://raw.githubusercontent.com/j5pu/macbootstrap/master/npm.sh )"
+bash -c "$( curl -sL "https://raw.githubusercontent.com/j5pu/macbootstrap/master/npm.sh?$(date +%s)" )"
+```
+### ruby bundle system
+```shell script
+bash -c "$( curl -sL https://raw.githubusercontent.com/j5pu/macbootstrap/master/npm.sh )"
+bash -c "$( curl -sL "https://raw.githubusercontent.com/j5pu/macbootstrap/master/npm.sh?$(date +%s)" )"
 ```
 
