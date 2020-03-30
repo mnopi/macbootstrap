@@ -13,7 +13,7 @@ tag="${repo}"
 github_user="${ACCOUNT_NAME}"
 admin_user="yes"
 admin_id="502"
-scripts="brew pip npm gem"
+scripts="pip npm gem"
 apple_scripts="/Users/${ACCOUNT_NAME}/Library/Mobile Documents/com~apple~ScriptEditor2/Documents"
 ## END: script constants
 
@@ -134,7 +134,7 @@ if [[ "${admin_user}" == "yes" ]] && ! sudo dscl . -read /Users/admin > /dev/nul
   if ! id "${admin_id}" > /dev/null 2>&1; then
     sudo dscl . -create /Users/admin
     sudo dscl . -create /Users/admin UserShell /bin/bash
-    sudo dscl . -create /Users/admin RealName “Admin”
+    sudo dscl . -create /Users/admin RealName Admin
     sudo dscl . -create /Users/admin UniqueID "${admin_id}"
     sudo dscl . -create /Users/admin PrimaryGroupID $( id -g ${ACCOUNT_NAME} )
     sudo dscl . -create /Users/admin NFSHomeDirectory /Users/admin
@@ -215,19 +215,28 @@ done
 ## END: scripts
 
 ## BEGIN: pip
-test -d /usr/local/bin/pip && test -L /usr/local/bin/pip || { ln -s /usr/local/bin/pip3 /usr/local/bin/pip; tag_file /usr/local/bin/pip; echo "+ OK: /usr/local/bin/pip link - created"; }
+test -f /usr/local/bin/pip && test -L /usr/local/bin/pip || { ln -s /usr/local/bin/pip3 /usr/local/bin/pip; tag_file /usr/local/bin/pip; echo "+ OK: /usr/local/bin/pip link - created"; }
 ## END: pip
 
-## BEGIN: bash
-## END: bash
+## BEGIN: User Shell
+USER_SHELL="/usr/local/bin/bash"
+OLD_SHELL="$( dscl . -read /Users/"${ACCOUNT_NAME}" UserShell | awk '{print $2}' )"
+
+if test -e "${USER_SHELL}" && [[ "${OLD_SHELL}" != "${USER_SHELL}" ]]; then
+  /usr/bin/sudo /usr/bin/dscl . -change "/Users/${ACCOUNT_NAME}" UserShell "${OLD_SHELL}" "${USER_SHELL}" && echo "+ OK: User Shell - updated" || exit 1
+fi
+## END: User Shell
 
 ## BEGIN: paths
 # con el path del repo
 ## END: bash
 
+# apps
+# keychain
 # packages atom
 # duti
 # Defaults
+# /usr/local/sbin en path dice brew
 # Dock
 # mackup
 # Fonts
