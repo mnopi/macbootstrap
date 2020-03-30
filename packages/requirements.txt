@@ -1,4 +1,4 @@
-# requirements-full.txt
+# requirements.txt
 pip
 wheel
 setuptools
