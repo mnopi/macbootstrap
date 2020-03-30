@@ -19,6 +19,6 @@ else
   echo "- Error: ${url} - not downloaded" >&2; exit 1
 fi
 
-/usr/local/opt/ruby/bin/bundle --gemfile="/tmp/${file}" --system  # --system ~= --path="${GEMS_PATH}"
+bundle config set system 'true'
+/usr/local/opt/ruby/bin/bundle --gemfile="/tmp/${file}"  # --system ~= --path="${GEMS_PATH}"
 rm -f "/tmp/${file}"
-
