@@ -1,5 +1,4 @@
 tap "adoptopenjdk/openjdk"
-tap "dockutil"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
