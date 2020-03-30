@@ -19,5 +19,5 @@ else
   echo "- Error: ${url} - not downloaded" >&2; exit 1
 fi
 
-pip3 install --upgrade -q -r "/tmp/${file}"
+pip3 install --upgrade -q -r "/tmp/${file}"  || { echo "- Error: pip3 install --upgrade -r /tmp/${file}" >&2; exit 1; }
 rm -f "/tmp/${file}"
