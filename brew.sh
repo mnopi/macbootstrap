@@ -23,3 +23,4 @@ brew bundle --file "/tmp/${file}" || { echo "- Error: brew bundle --file /tmp/${
 brew bundle cleanup --force --file "/tmp/${file}"  || { echo "- Error: brew bundle cleanup --force --file /tmp/${file}" >&2; exit 1; }
 sudo xattr -d -r com.apple.quarantine /Applications || { echo "- Error: xattr -d -r com.apple.quarantine /Applications" >&2; exit 1; }
 rm -f "/tmp/${file}"
+rm -f "/tmp/${file}.lock.json"
