@@ -19,7 +19,7 @@ else
   echo "- Error: ${url} - not downloaded" >&2; exit 1
 fi
 
-brew bundle --file "/tmp/${file}"
-brew bundle cleanup --force --file "/tmp/${file}"
-sudo xattr -d -r com.apple.quarantine /Applications
+brew bundle --file "/tmp/${file}" || { echo "- Error: brew bundle --file /tmp/${file}" >&2; exit 1; }
+brew bundle cleanup --force --file "/tmp/${file}"  || { echo "- Error: brew bundle cleanup --force --file /tmp/${file}" >&2; exit 1; }
+sudo xattr -d -r com.apple.quarantine /Applications || { echo "- Error: xattr -d -r com.apple.quarantine /Applications" >&2; exit 1; }
 rm -f "/tmp/${file}"
