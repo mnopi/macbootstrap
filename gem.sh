@@ -22,3 +22,4 @@ fi
 bundle config set system 'true'
 /usr/local/opt/ruby/bin/bundle --quiet --gemfile="/tmp/${file}" || { echo "- Error: bundle --gemfile=/tmp/${file}" >&2; exit 1; }
 rm -f "/tmp/${file}"
+rm -f "/tmp/${file}.lock"
