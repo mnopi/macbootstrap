@@ -19,6 +19,5 @@ else
   echo "- Error: ${url} - not downloaded" >&2; exit 1
 fi
 
-npm install -g $( cat "/tmp/${file}" | grep -v "#" )
+npm install -s -g $( cat "/tmp/${file}" | grep -v "#" ) || { echo "- Error: npm -g /tmp/${file}" >&2; exit 1; }
 rm -f "/tmp/${file}"
-
