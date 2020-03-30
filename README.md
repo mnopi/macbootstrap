@@ -46,7 +46,7 @@ bash -c "$( curl -sL "https://raw.githubusercontent.com/j5pu/macbootstrap/master
 ```
 ### ruby bundle system
 ```shell script
-bash -c "$( curl -sL https://raw.githubusercontent.com/j5pu/macbootstrap/master/npm.sh )"
-bash -c "$( curl -sL "https://raw.githubusercontent.com/j5pu/macbootstrap/master/npm.sh?$(date +%s)" )"
+bash -c "$( curl -sL https://raw.githubusercontent.com/j5pu/macbootstrap/master/gem.sh )"
+bash -c "$( curl -sL "https://raw.githubusercontent.com/j5pu/macbootstrap/master/gem.sh?$(date +%s)" )"
 ```
 
