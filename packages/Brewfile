@@ -9,6 +9,7 @@ tap "homebrew/services"
 tap "knqyf263/pet"
 tap "mas-cli/tap"
 tap "mongodb/brew"
+brew "ack"
 brew "autojump"
 brew "bash"
 brew "bash-completion@2"
@@ -99,6 +100,7 @@ cask "autofirma"
 cask "bitbar"
 cask "borgbackup"
 cask "cacher"
+cask "cheatsheet"
 cask "chromedriver"
 cask "clean-me"
 cask "console"
@@ -177,6 +179,7 @@ cask "whatsapp"
 cask "wireshark"
 cask "wkhtmltopdf"
 #mas "Apple Configurator 2", id: 1037126344
+mas "Amphetamine", id: 937984704
 mas "Bear", id: 1091189122
 mas "Duplicate Detective", id: 686428787
 mas "IPBar", id: 1347332610
