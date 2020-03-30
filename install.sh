@@ -202,7 +202,7 @@ fi
 
 ## BEGIN: install brew
 if [[ ! -f /usr/local/bin/brew ]]; then
-  yes yes | /usr/bin/ruby -e "$( curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install )"
+  yes yes | /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
 ## END: install brew
 
