@@ -205,3 +205,8 @@ if [[ ! -f /usr/local/bin/brew ]]; then
   yes yes | /usr/bin/ruby -e "$( curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install )"
 fi
 ## END: install brew
+
+## BEGIN: brew bundle
+#url="https://raw.githubusercontent.com/${ACCOUNT_NAME}/${repo}/master/brew.sh"
+#bash -c "$( curl -sL "${url}?$(date +%s)" )" || { echo "- Error: ${url}" >&2; exit 1; }
+## END: brew bundle
