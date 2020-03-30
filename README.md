@@ -1,5 +1,5 @@
 # macbootstrap
-macOS bootstrap script
+macOS bootstrap scripts
 
 ## Tasks
 1.  .gitconfig
