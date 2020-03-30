@@ -6,18 +6,20 @@ ACCOUNT_NAME=$( [[ "$( uname -s )" == "Darwin" ]] && /usr/bin/stat -f "%Su" /dev
 repo="macbootstrap"
 tag="${repo}"
 github_user="${ACCOUNT_NAME}"
+file="Brewfile"
+url="https://raw.githubusercontent.com/${ACCOUNT_NAME}/${repo}/master/packages/${file}"
 ## END: script constants
 
-url="https://raw.githubusercontent.com/${ACCOUNT_NAME}/${repo}/master/packages/Brewfile"
-curl -sL "${url}?$(date +%s)" > /tmp/Brewfile
+curl -sL "${url}?$(date +%s)" > "/tmp/${file}"
 
-if grep brew /tmp/Brewfile > /dev/null 2>&1; then
+if grep "${file}" "/tmp/${file}" > /dev/null 2>&1; then
   echo "+ OK: ${url} - downloaded"
 else
-  rm -f /tmp/Brewfile
+  rm -f "/tmp/${file}"
   echo "- Error: ${url} - not downloaded" >&2; exit 1
 fi
 
-brew bundle --file /tmp/Brewfile
-brew bundle cleanup --force --file /tmp/Brewfile
+brew bundle --file "/tmp/${file}"
+brew bundle cleanup --force --file "/tmp/${file}"
 sudo xattr -d -r com.apple.quarantine /Applications
+rm -f "/tmp/${file}"
