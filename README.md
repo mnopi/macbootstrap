@@ -19,13 +19,16 @@ macOS bootstrap script
 
 
 ## Install
+Includes:
+- brew bundle
 ```shell script
 bash -c "$( curl -sL https://raw.githubusercontent.com/j5pu/macbootstrap/master/install.sh )"
 bash -c "$( curl -sL "https://raw.githubusercontent.com/j5pu/macbootstrap/master/install.sh?$(date +%s)" )"
 ```
 
-## Uninstall
+## Brew bundle
 ```shell script
-bash -c "$( curl -sL https://raw.githubusercontent.com/j5pu/macbootstrap/master/uninstall.sh )"
-bash -c "$( curl -sL "https://raw.githubusercontent.com/j5pu/macbootstrap/master/uninstall.sh?$(date +%s)" )"
+bash -c "$( curl -sL https://raw.githubusercontent.com/j5pu/macbootstrap/master/brew.sh )"
+bash -c "$( curl -sL "https://raw.githubusercontent.com/j5pu/macbootstrap/master/brew.sh?$(date +%s)" )"
 ```
+
