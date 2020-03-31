@@ -138,9 +138,9 @@ cask "keeweb"
 cask "keka"
 cask "kekadefaultapp"
 cask "kite"
-cask "kvirc"
-cask "lepton"
-cask "macpass"
+#cask "kvirc"
+#cask "lepton"
+#cask "macpass"
 cask "microsoft-office"
 #cask "mongodb-compass-community"
 cask "ngrok"
@@ -154,7 +154,7 @@ cask "qlimagesize"
 cask "qlmarkdown"
 cask "qlstephen"
 cask "qlvideo"
-cask "quassel-client"
+#cask "quassel-client"
 cask "quicklook-json"
 cask "quicklookase"
 cask "rcloneosx"
@@ -185,7 +185,7 @@ mas "Bear", id: 1091189122
 mas "IPBar", id: 1347332610
 mas "Image2icon", id: 992115977
 mas "Keynote", id: 409183694
-mas "LimeChat", id: 414030210
+#mas "LimeChat", id: 414030210
 mas "Magnet", id: 441258766
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
