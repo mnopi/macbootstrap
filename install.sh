@@ -240,6 +240,7 @@ fi
 # Dock
 # mackup
 # Fonts
+# gitignore .localized
 # Dictionaries
 # Control panel
 # gitconfig
