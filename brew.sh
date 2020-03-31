@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 ACCOUNT_NAME=$( [[ "$( uname -s )" == "Darwin" ]] && /usr/bin/stat -f "%Su" /dev/console || { echo "- Error: Not macOS" >&2; exit 1; } )
-set -x
+
 ## START: script constants
 repo="macbootstrap"
 tag="${repo}"
