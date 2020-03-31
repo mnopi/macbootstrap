@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -x
+
 ACCOUNT_NAME=$( [[ "$( uname -s )" == "Darwin" ]] && /usr/bin/stat -f "%Su" /dev/console || { echo "- Error: Not macOS" >&2; exit 1; } )
 
 ## START: script constants
