@@ -13,7 +13,7 @@ tag="${repo}"
 github_user="${ACCOUNT_NAME}"
 admin_user="yes"
 admin_id="502"
-scripts="pip npm gem"
+scripts="brew pip npm gem"
 apple_scripts="/Users/${ACCOUNT_NAME}/Library/Mobile Documents/com~apple~ScriptEditor2/Documents"
 ## END: script constants
 
