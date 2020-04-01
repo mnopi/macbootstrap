@@ -2,14 +2,14 @@
 pip
 wheel
 setuptools
+mackup
 ansible
 ansible-lint
 #pypi_name
-mackup
-pipdeptree
+#pipdeptree
 #python-dotenv[cli]
 #environs
-pip-autoremove
+#pip-autoremove
 #homely
 #cider
 #click
