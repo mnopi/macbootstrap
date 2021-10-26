@@ -1,0 +1,216 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="ComposeMissingKeys" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="DuplicatedCode" enabled="false" level="WEAK WARNING" enabled_by_default="false">
+      <GlobalSettings restrictedDuplicateScope="SAME_FILE" />
+      <Languages>
+        <language minSize="29" name="Python" />
+      </Languages>
+    </inspection_tool>
+    <inspection_tool class="Eslint" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="7">
+            <item index="0" class="java.lang.String" itemvalue="nobr" />
+            <item index="1" class="java.lang.String" itemvalue="noembed" />
+            <item index="2" class="java.lang.String" itemvalue="comment" />
+            <item index="3" class="java.lang.String" itemvalue="noscript" />
+            <item index="4" class="java.lang.String" itemvalue="embed" />
+            <item index="5" class="java.lang.String" itemvalue="script" />
+            <item index="6" class="java.lang.String" itemvalue="password" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="InconsistentLineSeparators" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="LongLine" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="ProblematicWhitespace" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyArgumentEqualDefaultInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyAttributeOutsideInitInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyAugmentAssignmentInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyBroadExceptionInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyClassicStyleClassInspection" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyCompatibilityInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ourVersions">
+        <value>
+          <list size="2">
+            <item index="0" class="java.lang.String" itemvalue="3.9" />
+            <item index="1" class="java.lang.String" itemvalue="3.10" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyMandatoryEncodingInspection" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="myAllPythons" value="true" />
+    </inspection_tool>
+    <inspection_tool class="PyMissingTypeHintsInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="46">
+            <item index="0" class="java.lang.String" itemvalue="bapy" />
+            <item index="1" class="java.lang.String" itemvalue="distro" />
+            <item index="2" class="java.lang.String" itemvalue="decorator" />
+            <item index="3" class="java.lang.String" itemvalue="python-box" />
+            <item index="4" class="java.lang.String" itemvalue="environs" />
+            <item index="5" class="java.lang.String" itemvalue="colorlog" />
+            <item index="6" class="java.lang.String" itemvalue="more-itertools" />
+            <item index="7" class="java.lang.String" itemvalue="types-docutils" />
+            <item index="8" class="java.lang.String" itemvalue="types-toml" />
+            <item index="9" class="java.lang.String" itemvalue="dataclass_factory" />
+            <item index="10" class="java.lang.String" itemvalue="jsonpickle" />
+            <item index="11" class="java.lang.String" itemvalue="click_completion" />
+            <item index="12" class="java.lang.String" itemvalue="setuptools" />
+            <item index="13" class="java.lang.String" itemvalue="types-PyYAML" />
+            <item index="14" class="java.lang.String" itemvalue="types-click" />
+            <item index="15" class="java.lang.String" itemvalue="verboselogs" />
+            <item index="16" class="java.lang.String" itemvalue="pip" />
+            <item index="17" class="java.lang.String" itemvalue="semver" />
+            <item index="18" class="java.lang.String" itemvalue="tenacity" />
+            <item index="19" class="java.lang.String" itemvalue="devtools" />
+            <item index="20" class="java.lang.String" itemvalue="gitpython" />
+            <item index="21" class="java.lang.String" itemvalue="intervaltree" />
+            <item index="22" class="java.lang.String" itemvalue="types-decorator" />
+            <item index="23" class="java.lang.String" itemvalue="types-nmap" />
+            <item index="24" class="java.lang.String" itemvalue="wakatime" />
+            <item index="25" class="java.lang.String" itemvalue="pydantic" />
+            <item index="26" class="java.lang.String" itemvalue="types-ipaddress" />
+            <item index="27" class="java.lang.String" itemvalue="pymongo" />
+            <item index="28" class="java.lang.String" itemvalue="typer" />
+            <item index="29" class="java.lang.String" itemvalue="wheel" />
+            <item index="30" class="java.lang.String" itemvalue="twine" />
+            <item index="31" class="java.lang.String" itemvalue="rich" />
+            <item index="32" class="java.lang.String" itemvalue="types-singledispatch" />
+            <item index="33" class="java.lang.String" itemvalue="types-requests" />
+            <item index="34" class="java.lang.String" itemvalue="psutil" />
+            <item index="35" class="java.lang.String" itemvalue="bump2version" />
+            <item index="36" class="java.lang.String" itemvalue="pandas" />
+            <item index="37" class="java.lang.String" itemvalue="typing_json" />
+            <item index="38" class="java.lang.String" itemvalue="icecream" />
+            <item index="39" class="java.lang.String" itemvalue="types-typing-extensions" />
+            <item index="40" class="java.lang.String" itemvalue="colorama" />
+            <item index="41" class="java.lang.String" itemvalue="shell_proc" />
+            <item index="42" class="java.lang.String" itemvalue="furl" />
+            <item index="43" class="java.lang.String" itemvalue="dpath" />
+            <item index="44" class="java.lang.String" itemvalue="nested-lookup" />
+            <item index="45" class="java.lang.String" itemvalue="shellingham" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="E722" />
+          <option value="E741" />
+          <option value="E742" />
+          <option value="W605" />
+          <option value="E731" />
+          <option value="E702" />
+          <option value="E701" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N802" />
+          <option value="N806" />
+          <option value="N803" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyProtectedMemberInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyShadowingBuiltinsInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredNames">
+        <list>
+          <option value="print" />
+          <option value="type" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="tuple.__setitem__" />
+          <option value="_PathLike.register" />
+          <option value="pathlib._normal_accessor" />
+          <option value="typing._GenericAlias" />
+          <option value="click.BoolParamType" />
+          <option value="sys._getframe" />
+          <option value="Level.__args__" />
+          <option value="object.__args__" />
+          <option value="rich.prompt" />
+          <option value="str.read_text" />
+          <option value="asyncio.runners._cancel_all_tasks" />
+          <option value="bapy.Logr.root" />
+          <option value="asyncio.events.AbstractEventLoop._selector" />
+          <option value="typing._alias" />
+          <option value="ipaddress._BaseAddress" />
+          <option value="threading._RLock" />
+          <option value="threading._CRLock" />
+          <option value="typing.Mapping.__delitem__" />
+          <option value="typing.Mapping.__setitem__" />
+          <option value="LST.__args__" />
+          <option value="SeqNoStr.__args__" />
+          <option value="Seq.__args__" />
+          <option value="asyncio.events._RunningLoop" />
+          <option value="importlib._bootstrap" />
+          <option value="importlib.resources.files" />
+          <option value="bapy.core.Path._cparts" />
+          <option value="importlib._bootstrap_external" />
+          <option value="importlib.machinery._PYCACHE" />
+          <option value="_importlib_modulespec._Loader.exec_module" />
+          <option value="upins.path.Path._cparts" />
+          <option value="dataclasses._POST_INIT_NAME" />
+          <option value="build.__main__" />
+          <option value="upins.paths.Path._cparts" />
+          <option value="upins._path.Path._cparts" />
+          <option value="typing.__all__" />
+          <option value="rc._path.Path._cparts" />
+          <option value="typing._SpecialForm._name" />
+          <option value="typing._LiteralGenericAlias" />
+          <option value="rc.kind.setter" />
+          <option value="typing.Sequence.register" />
+          <option value="rc.rv.deleter" />
+          <option value="rc.rv.setter" />
+          <option value="str.__args__" />
+          <option value="sys._current_frames" />
+          <option value="inspect._empty" />
+          <option value="sys._base_executable" />
+          <option value="upins.memory.setter" />
+          <option value="upins.messagequeue.setter" />
+          <option value="upins.semaphore.setter" />
+          <option value="type.__dataclass_fields__" />
+          <option value="upins.condition.setter" />
+          <option value="upins.installed_previous.setter" />
+          <option value="upins.max_version.setter" />
+          <option value="upins.new_version.setter" />
+          <option value="upins._siteprevious.setter" />
+          <option value="loguru.Logger._core" />
+          <option value="asyncio.__spec__" />
+          <option value="lib.stdlib.rehashx" />
+          <option value="arg.rich" />
+          <option value="stdlib.stdlib.rich" />
+          <option value="stdlib.rich" />
+          <option value="importlib.abc._register" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PydanticTypeCheckerInspection" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="bashproDynamicSourcePath" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="bashproGoogleFileNameStyle" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="bashproGoogleFunctionComment" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="bashproGoogleShebang" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="bashproGoogleVariableNameStyle" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="bashproShellCheck" enabled="true" level="ERROR" enabled_by_default="true">
+      <shellcheck_settings value="SC2090" />
+    </inspection_tool>
+    <inspection_tool class="dynamicSourcePath" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="executableNoShebang" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="shebangNotExecutable" enabled="true" level="WARNING" enabled_by_default="true" />
+  </profile>
+</component>
