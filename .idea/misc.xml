@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RSettings">
+    <option name="interpreterPath" value="/usr/local/bin/R" />
+  </component>
+  <component name="ShellcheckProjectComponent">
+    <option name="shellcheckExecutable" value="/usr/local/bin/shellcheck" />
+    <option name="pluginEnabled" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="1" Folder0="$USER_HOME$/macdev" CustomDictionaries="1" CustomDictionary0="$USER_HOME$/macdev/spanish.dic" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
+    <option name="myConnectionType" value="NONE" />
+    <option name="myConnectionId" value="" />
+  </component>
+  <component name="VagrantProjectSettings">
+    <option name="instanceFolder" value="" />
+    <option name="provider" value="" />
+  </component>
+</project>
